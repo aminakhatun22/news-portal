@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
 
-    <!-- tail -->
+    <!-- tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!--  -->
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
@@ -126,7 +126,33 @@
             </div>
 
 
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Question No-4: Why use tamplate string?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <strong>Template literals are literals delimited with backtick (`) characters, allowing for
+                            multi-line strings, for string interpolation with embedded expressions, and for special
+                            constructs called tagged templates.
+
+                            Template literals are sometimes informally called template strings, because they are used
+                            most commonly for string interpolation (to create strings by doing substitution of
+                            placeholders). However, a tagged template literal may not result in a string; it can be used
+                            with a custom tag function to perform whatever operations you want on the different parts of
+                            the template literal.
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+
 
 
 
