@@ -61,13 +61,14 @@ const shownewsDetails = async (details) => {
        <img  class="w-50" src="${detail?.thumbnail_url}" alt=" ">
        <div class="card-body ml-6">
         <h2 class="card-title">${detail?.title}</h2>
-        <p>${detail?.details}</p>
+        <p>${detail.details.length > 20 ? detail.details.slice(0, 300) + '...' : detail.details}</p>
+       
         <div> 
         
         <div class= "flex">
         <img class="w-20 mr-4  rounded-circle" src="${detail.author.img}" alt="">
     <p class="mt-4">${detail.author.name} </p>
-    <p class="mt-4"> ${detail.total_view}</p>
+    <p class="mt-4 "> View: ${detail.total_view}</p>
     <div class="card-actions justify-end">
         <button class="btn btn-primary data-bs-toggle="modal" data-bs-target="#exampleModal">Show detail</button>
     </div>
@@ -105,33 +106,15 @@ const toggleSpinner = isLoading => {
 }
 
 loadCategoriesId();
-
-
-
-
-
-
-
-
-
-
 loadCategories();
 
-// modal
 
 
 
 
 
-// fetch id-2
 
-const loadCategories2 = async () => {
-    const url = `https://openapi.programming-hero.com/api/news/category/01`
-    const res = await fetch(url);
-    const data = await res.json();
-    console.log(data.data);
-}
-loadCategories2();
+
 
 
 
