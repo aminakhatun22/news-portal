@@ -57,13 +57,16 @@ const shownewsDetails = async (details) => {
     <p>${detail.author.details}</p>
     <div> 
     <div class="card-actions justify-end">
+    <button class="btn btn-primary data-bs-toggle="modal" data-bs-target="#exampleModal">Show detail</button>
+
     <div>
     <img src="" alt="">
 <p></p>
 <p></p>
 </div>
 
-    <button class="btn btn-primary">Watch</button>
+   
+
     </div>
   </div>
 </div>
@@ -105,16 +108,21 @@ loadCategoriesId();
 
 loadCategories();
 
+// modal
+
+
+
+
 
 // fetch id-2
 
-// const loadCategories2 = async () => {
-//     const url = `https://openapi.programming-hero.com/api/news/category/01`
-//     const res = await fetch(url);
-//     const data = await res.json();
-//     console.log(data);
-// }
-// loadCategories2();
+const loadCategories2 = async () => {
+    const url = `https://openapi.programming-hero.com/api/news/category/01`
+    const res = await fetch(url);
+    const data = await res.json();
+    console.log(data);
+}
+loadCategories2();
 
 
 

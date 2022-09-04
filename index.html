@@ -81,18 +81,14 @@
                 <h1 class="ml-28 mt-4">
                     Sort By View:
                 </h1>
-                <div tabindex=""
-                    class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box ml-10 w-32">
-                    <div class="collapse-title text-xl">
-                        default
+                <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                    <div class="collapse-title text-xl font-medium">
+                        Focus me to see content
                     </div>
                     <div class="collapse-content">
-                        <p>default</p>
-                        <p>Most viewed</p>
-                        <p>Most recent</p>
+                        <p>tabindex="0" attribute is necessary to make the div focusable</p>
                     </div>
                 </div>
-
                 <p class="bg-blue-600 text-white  rounded ml-auto mr-4  text-2xl p-1">
                     Today’s Pic
                 </p>
@@ -101,12 +97,13 @@
                     trending
                 </p>
             </div>
+            <!-- all news -->
         </section>
 
         <section id="details-container">
 
         </section>
-
+        <!-- spinner -->
         <section id="loader" class="d-none">
             <div class="text-center">
                 <div class="spinner-border" role="status">
@@ -115,7 +112,33 @@
             </div>
         </section>
 
+        <!-- modal -->
+        <section>
+            <!-- Button trigger modal -->
 
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
     </main>
     <!-- js link -->
     <script src="js/index.js"></script>
